@@ -4,7 +4,9 @@ from pathlib import Path
 print("Loading Luna x City AI -IT (10GB, ~2min)...")
 try:
     from transformers import AutoProcessor, AutoModelForMultimodalLM
-    D = os.environ.get("LUNA_DIR", r"D:\cat run code xyz-it")
+    D = os.environ.get("LUNA_DIR") or str(Path(__file__).parent / "luna-weights")
+    if not os.path.isdir(D):
+        D = r"D:\cat run code xyz-it"
     proc = AutoProcessor.from_pretrained(D)
     model = AutoModelForMultimodalLM.from_pretrained(D, dtype="auto", device_map="cpu")
     print("Loaded. Talk to AI. Enter=send, quit=exit.")

@@ -19,6 +19,30 @@ Honest scores (base weights): MMLU-Pro 60.0, GPQA 43.4, LiveCodeBench 44.0, Term
 GDPval-AA 0.0, HLE unreported. Agentic computer control was removed — this is a chat model, not an agent.
 See `chat_simple.py` to run. Original Google card continues below.
 
+## Install
+
+Get the code plus the weights (~10GB), then chat. Needs ~12GB free RAM.
+
+**Windows (PowerShell):**
+```
+git clone https://github.com/arqamsyed54-arch/Luna-X-City-AI-x-Gemma-4-x-Ahmad-Syed.git
+cd Luna-X-City-AI-x-Gemma-4-x-Ahmad-Syed
+py -3.14 -m pip install -r requirements-web.txt
+hf download aKUXAHMA/luna-x-city-ai-gemma4 --local-dir ./luna-weights
+py -3.14 chat_simple.py
+```
+
+**macOS / Linux (terminal):**
+```
+git clone https://github.com/arqamsyed54-arch/Luna-X-City-AI-x-Gemma-4-x-Ahmad-Syed.git
+cd Luna-X-City-AI-x-Gemma-4-x-Ahmad-Syed
+python3 -m pip install -r requirements-web.txt
+hf download aKUXAHMA/luna-x-city-ai-gemma4 --local-dir ./luna-weights
+python3 chat_simple.py
+```
+
+Weights load takes ~2 minutes; answers take ~1 minute on CPU. Set `LUNA_DIR` to point at weights anywhere else.
+
 <div align="center">
   <img src=https://ai.google.dev/gemma/images/gemma4_banner.png>
 </div>

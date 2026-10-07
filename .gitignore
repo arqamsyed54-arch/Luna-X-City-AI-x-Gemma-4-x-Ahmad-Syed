@@ -39,3 +39,6 @@ secrets.json
 
 # Local edit scratch (not for publish)
 /edit/
+
+# Large website media (45MB+): host separately, not in git
+website/intro.mp4

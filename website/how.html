@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How it works — Luna x City AI</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="index.html">Luna <em>×</em> City AI</a>
+<nav class="links"><a href="index.html">Home</a><a href="model.html">Model</a><a class="on" href="how.html">How it works</a><a href="benchmarks.html">Benchmarks</a><a href="safety.html">Safety</a><a href="report.html">Report</a><a href="start.html">Start</a></nav></div></header>
+<div class="phead"><div class="wrap"><p class="mono">02 — The harness</p><h1>Four layers around<br>frozen weights.</h1></div></div>
+<section class="sec"><div class="wrap">
+<div class="grid">
+<div class="cell2 reveal"><h3><span class="n">L1</span>Chat core</h3><p>Luna system prompt, the real instruction-tuned chat template, 3-turn memory, persistent facts across sessions.</p></div>
+<div class="cell2 reveal"><h3><span class="n">L2</span>Exact tools</h3><p>AST calculator, SymPy equations, unit and motion converters. Computed answers, never guessed ones.</p></div>
+<div class="cell2 reveal"><h3><span class="n">L3</span>Verified web</h3><p>Wikipedia, DuckDuckGo snippets, full page fetch, API-key hooks. Verify-first: no proof, no claim.</p></div>
+<div class="cell2 reveal"><h3><span class="n">L4</span>Safety locks</h3><p>Tiered refusals, jailbreak and injection blocks, medical and bias guards, leak-stripper, 30-test suite.</p></div>
+</div>
+<blockquote class="pull">"Nothing in the harness is filler — each piece exists because a measured failure demanded it."<cite>— build notes, Oct 2026</cite></blockquote>
+<h2 class="st">A worked example</h2>
+<p>You type <i>what is 17 times 19?</i> The raw weights once answered 313. Now the calculator layer parses the full expression, evaluates it exactly (323), and the model never gets to guess. You type <i>who leads Japan?</i> The cutoff says Kishida; the web layer fetches today's answer (Takaichi) and the reply follows the evidence. You type <i>hi</i> — thirty tokens, one line, no lecture. Length, tools and verification are chosen per question, every time.</p>
+<h2 class="st">Memory without illusions</h2>
+<p>The last three exchanges ride along with every prompt, and durable facts you state — your name, your preferences — persist in a local file across sessions. Beyond that window the model genuinely forgets; the site says so because pretending otherwise would be a lie users discover in one evening.</p>
+<div class="next"><a href="model.html"><small>← BACK</small><br><b>Model</b></a><a href="benchmarks.html"><small>NEXT →</small><br><b>Benchmarks</b></a></div>
+</div></section>
+<footer><div class="wrap"><div class="cols">
+<div><h5>Explore</h5><a href="index.html">Home</a><a href="model.html">Model</a><a href="benchmarks.html">Benchmarks</a></div>
+<div><h5>Trust</h5><a href="safety.html">Safety</a><a href="report.html">Honest report</a><a href="start.html">Get started</a></div>
+</div><span>Luna x City AI v1.0 · weights © Google DeepMind · <span id="y"></span></span></div></footer>
+<script src="site.js"></script></body></html>

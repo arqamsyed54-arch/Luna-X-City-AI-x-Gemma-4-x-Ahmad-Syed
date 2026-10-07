@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get started — Luna x City AI</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="index.html">Luna <em>×</em> City AI</a>
+<nav class="links"><a href="index.html">Home</a><a href="model.html">Model</a><a href="how.html">How it works</a><a href="benchmarks.html">Benchmarks</a><a href="safety.html">Safety</a><a href="report.html">Report</a><a class="on" href="start.html">Start</a></nav></div></header>
+<div class="phead"><div class="wrap"><p class="mono">07 — Two commands</p><h1>Get started.</h1>
+<p class="dek">No account, no cloud, no GPU. Two commands and patience.</p></div></div>
+<section class="sec"><div class="wrap reveal">
+<pre>py -3.14 -m pip install -r requirements-web.txt
+py -3.14 chat_simple.py   # wait ~2 min load, then chat</pre>
+<p>Needs ~12GB RAM free, 10GB disk. CPU answers take ~60s. Apache-2.0 — keep Google attribution.</p>
+<h2 class="st">Who built this</h2>
+<p><b>Ahmad Syed</b> — harness, prompts, tools, tests, site. Base model by <b>Google DeepMind</b>, Gemma 4 family.</p>
+<h2 class="st">Before you begin</h2>
+<p>This is a 10-gigabyte download followed by a two-minute load and roughly a minute per answer. If you need instant replies, this is not your model — the honest requirements are below, and the FAQ answers what everyone asks first.</p>
+<h2 class="st">Questions, answered</h2>
+<details class="faq" open><summary>How long until first answer?</summary><p>About two minutes to load 10GB, then roughly a minute per answer on a 4-core CPU. This is memory bandwidth, not a bug.</p></details>
+<details class="faq"><summary>Does it need internet?</summary><p>Only for fresh facts. Math, chat and tools run fully offline; web lookup fires automatically on current-affairs questions.</p></details>
+<details class="faq"><summary>Can it control my computer?</summary><p>No. An agentic mode existed during development and was removed before release. This build answers only.</p></details>
+<details class="faq"><summary>May I use it commercially?</summary><p>Yes, under Apache-2.0 — keep the Google attribution and the license file.</p></details>
+<div class="next"><a href="report.html"><small>← BACK</small><br><b>Honest report</b></a><a href="index.html"><small>NEXT →</small><br><b>Home</b></a></div>
+</div></section>
+<footer><div class="wrap"><div class="cols">
+<div><h5>Explore</h5><a href="index.html">Home</a><a href="report.html">Honest report</a><a href="safety.html">Safety</a></div>
+<div><h5>Trust</h5><a href="model.html">Model</a><a href="benchmarks.html">Benchmarks</a><a href="how.html">How it works</a></div>
+</div><span>Luna x City AI v1.0 · weights © Google DeepMind · <span id="y"></span></span></div></footer>
+<script src="site.js"></script></body></html>

@@ -1,0 +1,41 @@
+# Luna x City AI - gitignore for open source
+# Keep model weights + configs, ignore caches, env, secrets
+
+# Hugging Face + pip caches (GBs, regenerable)
+/.cache/
+*.bin
+
+# Model weights: too large for GitHub (10GB). Lives on Hugging Face; see README.
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# Logs / temp
+*.log
+*.tmp
+C:/Users/dell/AppData/Local/Temp/opencode/
+
+# Runtime state (personal, regenerable)
+memory.json
+audit.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets - never commit
+*token*.txt
+*hf_token*
+secrets.json
+
+# Local edit scratch (not for publish)
+/edit/

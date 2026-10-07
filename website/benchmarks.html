@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Benchmarks — Luna x City AI</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="index.html">Luna <em>×</em> City AI</a>
+<nav class="links"><a href="index.html">Home</a><a href="model.html">Model</a><a href="how.html">How it works</a><a class="on" href="benchmarks.html">Benchmarks</a><a href="safety.html">Safety</a><a href="report.html">Report</a><a href="start.html">Start</a></nav></div></header>
+<div class="phead"><div class="wrap"><p class="mono">03 — Measured, not marketed</p><h1>Benchmarks.</h1>
+<p class="dek">Published scores plus our own measured suites. Read rows, not columns — harnesses differ everywhere.</p></div></div>
+<section class="sec"><div class="wrap reveal">
+<table>
+<caption>Table 2 — E2B class scores and the frontier for reference</caption>
+<tr><th>Benchmark</th><th>Luna (E2B)</th><th>Best rival</th></tr>
+<tr><td>MMLU Pro</td><td>60.0%</td><td>—</td></tr>
+<tr><td>GPQA Diamond</td><td>43.4%</td><td>96.0 (Astra*)</td></tr>
+<tr><td>LiveCodeBench v6</td><td>44.0%</td><td>—</td></tr>
+<tr><td>Terminal-Bench 4.0</td><td class="bad">3.0%</td><td>66.4 (Opus 5.5)</td></tr>
+<tr><td>GDPval-AA</td><td class="bad">0.0%</td><td>1846 (Opus 5.5)</td></tr>
+<tr><td>HLE + tools</td><td>– / AA 4.8%</td><td>67.7 (Opus 5.5)</td></tr>
+<tr><td>OSWorld 2.0</td><td>–</td><td>81.8 (Opus 5.5)</td></tr>
+<tr><td>FrontierCode / DeepSWE</td><td>–</td><td>54.4 / 77.9</td></tr>
+<tr><td>Our tool bench</td><td class="good">50/50</td><td>—</td></tr>
+<tr><td>Our safety suite</td><td class="good">30/30</td><td>—</td></tr>
+</table>
+<p class="fine">* aggregator-claimed. Frontier figure: a 2.3B on-device model is not competing with datacenter flagships — the honest comparison is efficiency per watt and per gigabyte.</p>
+<h2 class="st">How to read this table</h2>
+<p><b>MMLU Pro (60.0%)</b> tests professional knowledge across dozens of subjects — respectable for the size, miles from frontier. <b>GPQA (43.4%)</b> is graduate science; Luna handles textbook recall and fails multi-step lab reasoning. <b>LiveCodeBench (44.0%)</b> is contest coding; simple scripts pass, repository surgery does not. <b>Terminal-Bench Hard (3.0%)</b> and <b>GDPval (0.0%)</b> measure real terminal and workplace agency — effectively zero, which is why this build removed computer control instead of pretending. <b>Our 50/50 and 30/30</b> measure the harness around the weights: tools, refusals, formats — the part we actually built, and the part that makes daily use feel far stronger than 3%.</p>
+<div class="next"><a href="how.html"><small>← BACK</small><br><b>How it works</b></a><a href="safety.html"><small>NEXT →</small><br><b>Safety</b></a></div>
+</div></section>
+<footer><div class="wrap"><div class="cols">
+<div><h5>Explore</h5><a href="index.html">Home</a><a href="how.html">How it works</a><a href="safety.html">Safety</a></div>
+<div><h5>Trust</h5><a href="report.html">Honest report</a><a href="start.html">Get started</a><a href="model.html">Model</a></div>
+</div><span>Luna x City AI v1.0 · weights © Google DeepMind · <span id="y"></span></span></div></footer>
+<script src="site.js"></script></body></html>

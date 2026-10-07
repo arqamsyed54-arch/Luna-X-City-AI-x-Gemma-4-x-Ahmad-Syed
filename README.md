@@ -6,7 +6,9 @@ pipeline_tag: any-to-any
 base_model: google/gemma-4-E2B-it
 ---
 
-# Luna x City AI (v1.0)
+# Luna x City AI (v1.0) — by Ahmad Syed
+
+**Author: Ahmad Syed**
 
 Derivative of **google/gemma-4-E2B-it** (Apache-2.0, Google DeepMind). **Weights are unmodified** —
 all changes are an inference harness around the model: Luna system prompt, exact-math/SymPy solvers,

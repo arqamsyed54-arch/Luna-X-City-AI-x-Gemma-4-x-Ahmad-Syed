@@ -8,8 +8,6 @@ base_model: google/gemma-4-E2B-it
 
 # Luna x City AI (v1.0)
 
-**Author: Ahmad Syed**
-
 Derivative of **google/gemma-4-E2B-it** (Apache-2.0, Google DeepMind). **Weights are unmodified** —
 all changes are an inference harness around the model: Luna system prompt, exact-math/SymPy solvers,
 verify-first web RAG (Wikipedia + DuckDuckGo + page fetch), safety locks, science/code/English modes,
